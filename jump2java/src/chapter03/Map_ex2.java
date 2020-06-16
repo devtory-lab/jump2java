@@ -1,0 +1,32 @@
+package chapter03;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Map_ex2 {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, String> hm = new HashMap<String, String>();
+		Scanner sc = new Scanner(System.in);
+
+		hm.put("apple", "사과");
+		hm.put("paper", "종이");
+		hm.put("flower", "꽃");
+		
+		String voca;
+		
+		System.out.print("알고 싶은 단어를 입력하세요 : ");
+		
+		voca = sc.nextLine();
+		
+		if (hm.containsKey(voca)) {
+			System.out.println("해당하는 뜻은 \"" + hm.get(voca) + "\"");
+		} else {
+			System.out.println("해당하는 뜻은 데이타베이스에 없습니다.");
+		}
+		
+
+	}
+
+}
