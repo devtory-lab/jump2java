@@ -32,6 +32,7 @@ public class switch_ex {
 			monthString = "8월";
 			break;
 		default:
+			monthString = "Invalid month";
 			break;
 		}
 		
